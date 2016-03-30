@@ -1,6 +1,6 @@
 {
 	"name": "jQuery-menu-aim",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "jQuery plugin to fire events when user's cursor aims at particular dropdown menu items. For making responsive mega dropdowns like Amazon's.",
 	"entry point": "jquery.menu-aim.js",
 	"license": "MIT",

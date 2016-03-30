@@ -95,11 +95,11 @@
                 exit: $.noop,
                 activate: $.noop,
                 deactivate: $.noop,
-                exitMenu: $.noop
+                exitMenu: $.noop,
+                delay: 300
             }, opts);
 
-        var MOUSE_LOCS_TRACKED = 3,  // number of past mouse locations to track
-            DELAY = 300;  // ms delay when user appears to be entering submenu
+        var MOUSE_LOCS_TRACKED = 3 // number of past mouse locations to track
 
         /**
          * Keep track of the last few locations of the mouse.
@@ -299,7 +299,7 @@
                     // currently activated submenu. Delay before activating a
                     // new menu row, because user may be moving into submenu.
                     lastDelayLoc = loc;
-                    return DELAY;
+                    return options.delay;
                 }
 
                 lastDelayLoc = null;
